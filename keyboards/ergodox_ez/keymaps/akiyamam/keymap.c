@@ -83,13 +83,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
 // Otherwise, it needs KC_*
-[WIN] = LAYOUT_ergodox(  // layer 3 : WIN
+[WIN] = LAYOUT_ergodox(  // layer 1 : WIN
         // left hand
         KC_GRV,   KC_1,        KC_2,    KC_3,    KC_4,    KC_5,  KC_6,
         KC_TAB,   KC_Q,        KC_W,    KC_E,    KC_R,    KC_T,  TG(SYMB),
         KC_LCTRL, KC_A,        KC_S,    KC_D,    KC_F,    KC_G,
         KC_LSFT,  CTL_T(KC_Z), KC_X,    KC_C,    KC_V,    KC_B,  ALL_T(KC_NO),
-        KC_LEFT,  KC_LALT,     KC_LALT, KC_LGUI, MT(KC_RALT, KC_MHEN),
+        KC_LEFT,  KC_LALT,     KC_LALT, KC_LGUI, ALT_T(KC_MHEN),
                                               ALT_T(KC_APP),   KC_LGUI,
                                                                KC_HOME,
                                               KC_SPC,MO(SYMB), KC_END,
@@ -98,12 +98,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              TG(SYMB),     KC_Y,   KC_U,    KC_I,   KC_O,    KC_P,              KC_BSLS,
                            KC_H,   KC_J,    KC_K,   KC_L,    LT(MDIA, KC_SCLN), KC_ENT,
 	     DF(BASE), KC_N,   KC_M,    KC_COMM,KC_DOT,  KC_SLSH,           KC_RSFT,
-                                   MT(KC_RALT, KC_HENK), KC_RGUI,KC_LEFT, KC_DOWN,           KC_RIGHT, 
+                                   ALT_T(KC_HENK), KC_RGUI,KC_LEFT, KC_DOWN,           KC_RIGHT, 
              KC_LALT,          KC_ESC,
              KC_PGUP,
 	KC_PGDN, KC_SPACE , MO(SYMB)
     ),
-/* Keymap 1: Symbol Layer
+/* Keymap 2: Symbol Layer
  *
  * ,---------------------------------------------------.           ,--------------------------------------------------.
  * |Version  |  F1  |  F2  |  F3  |  F4  |  F5  |      |           |      |  F6  |  F7  |  F8  |  F9  |  F10 |   F11  |
@@ -145,7 +145,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,
        KC_TRNS, RGB_HUD, RGB_HUI
 ),
-/* Keymap 2: Media and mouse keys
+/* Keymap 3: Media And Mouse keys
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * | RESET  |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
