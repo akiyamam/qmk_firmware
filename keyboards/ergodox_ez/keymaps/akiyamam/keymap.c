@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   | LEFT | LALT |AltShf| LGUI | LAlt |                                       | RAlt | LEFT |  UP  | DOWN | RIGHT |
  *   `----------------------------------'                                       `-----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
+ *                                        | App  | LGui |       | INS  |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | Home |       | PgUp |        |      |
  *                                 |Space|MO(SYMB)|------|      |------| SPACE |MO(SYMB)|
@@ -94,12 +94,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                KC_HOME,
                                               KC_SPC,MO(SYMB), KC_END,
         // right hand
-       	     KC_6,         KC_7,   KC_8,    KC_9,   KC_0,    KC_MINS,           KC_BSPC,  
-             TG(SYMB),     KC_Y,   KC_U,    KC_I,   KC_O,    KC_P,              KC_BSLS,
-                           KC_H,   KC_J,    KC_K,   KC_L,    LT(MDIA, KC_SCLN), KC_ENT,
-	     DF(BASE), KC_N,   KC_M,    KC_COMM,KC_DOT,  KC_SLSH,           KC_RSFT,
-                                   ALT_T(KC_HENK), KC_RGUI,KC_LEFT, KC_DOWN,           KC_RIGHT, 
-             KC_LALT,          KC_ESC,
+       	     KC_6,     KC_7, KC_8,           KC_9,    KC_0,    KC_MINS,           KC_BSPC,  
+             TG(SYMB), KC_Y, KC_U,           KC_I,    KC_O,    KC_P,              KC_BSLS,
+                       KC_H, KC_J,           KC_K,    KC_L,    LT(MDIA, KC_SCLN), KC_ENT,
+	     DF(BASE), KC_N, KC_M,           KC_COMM, KC_DOT,  KC_SLSH,           KC_RSFT,
+                             ALT_T(KC_HENK), KC_LEFT, KC_DOWN, KC_UP,             KC_RIGHT, 
+             KC_INS,         KC_ESC,
              KC_PGUP,
 	KC_PGDN, KC_SPACE , MO(SYMB)
     ),
